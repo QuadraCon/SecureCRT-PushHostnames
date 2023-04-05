@@ -3,7 +3,7 @@ from termcolor import colored
 
 try:
     #Select Sessions folder. This is recursive, all other folders down from here will also be queried
-    path = "C:\\path\\HighestFolder"
+     path = "C:\\path\\HighestFolder"
 except Exception as catchAllConnectionException:
     print('--------------------------------------------------------')
     print(colored(catchAllConnectionException, 'red'))
@@ -27,7 +27,7 @@ else:
                     for line in fileContents:
                         writeFile.write(line)
                 print(colored(f'{filename} has been rewritten',"green"))
-            print(colored('Script done', 'green'))
+        print(colored('Script done', 'green'))
         print('--------------------------------------------------------')                               
     except Exception as catchAllOutputException:
         print(colored(catchAllOutputException, 'red'))
